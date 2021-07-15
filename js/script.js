@@ -12,17 +12,6 @@ form.addEventListener('submit', (e) => {
 
     localStorage.setItem('lead', convertData)
 
-    let content = document.getElementById('submit')
-
-    let carregando = `<p>Carregando...</p>`
-
-    let enviado = `<p>Enviado!</p>`
-
-    content.innerHTML = carregando
-
-
-    setTimeout(() => {
-        content.innerHTML = enviado
-    }, 1000)
+    alert("Enviado!")
 
 })
