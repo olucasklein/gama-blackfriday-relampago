@@ -1,6 +1,6 @@
 <h1 align="center"> BlackFriday Relâmpago</h1>
 <p align="center">Projeto desenvolvido durante o Hiring coders da VTEX com Gama Academy</p>
-<p>Preview: https://blackfridayrelampago.netlify.app/</p>
+<p align="center">Preview: https://blackfridayrelampago.netlify.app/</p>
 <img src="./blackfriday.png">
 
 📖 - Projeto para o Desafio 1 do #hiringcoders, com o intúito de desenvolver uma Landing Page responsiva estilo blackfriday que
