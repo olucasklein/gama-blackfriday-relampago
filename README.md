@@ -16,7 +16,7 @@ retorne dados inseridos no localstorage
 git clone https://github.com/olucasklein/gama-blackfriday-relampago.git
 
 <h2>Para iniciar a Landing Page:</h2>
-recomendo a utilização do Live Server no VSCode
+Recomendo a utilização do Live Server no VSCode
 
 <h2>📝 Licença</h2>
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
