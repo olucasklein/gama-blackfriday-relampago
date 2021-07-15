@@ -3,7 +3,7 @@
 <p align="center">Preview: https://blackfridayrelampago.netlify.app/</p>
 <img src="./blackfriday.png">
 
-📖 - Projeto para o Desafio 1 do #hiringcoders, com o intúito de desenvolver uma Landing Page responsiva estilo blackfriday que
+📖 - Projeto para o Desafio 1 do #hiringcoders, com o intúito de desenvolver uma Landing Page responsiva simples, estilo blackfriday que
 retorne dados inseridos no localstorage
 
 <h2>🚀 Tecnologias utilizadas: </h2>
