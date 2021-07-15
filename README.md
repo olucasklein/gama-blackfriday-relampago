@@ -2,7 +2,7 @@
 <p align="center">Projeto desenvolvido durante o Hiring coders da VTEX com Gama Academy</p>
 <img src="./blackfriday.png">
 
-📖 - Projeto para o Desafio 1 do #hiringcoders, com o intúito de desenvolver uma Landing Page estilo blackfriday que
+📖 - Projeto para o Desafio 1 do #hiringcoders, com o intúito de desenvolver uma Landing Page responsiva estilo blackfriday que
 retorne dados inseridos no localstorage
 
 <h2>🚀 Tecnologias utilizadas: </h2>
