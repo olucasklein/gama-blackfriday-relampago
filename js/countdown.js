@@ -14,9 +14,9 @@ var x = setInterval(function () {
     document.getElementById("clock").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, write some text
+    // Se a data chegar, escreva
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("clock").innerHTML = "EXPIRED";
+        document.getElementById("clock").innerHTML = "EXPIRADO";
     }
 }, 1000);
