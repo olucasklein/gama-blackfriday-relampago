@@ -1,0 +1,197 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+
+  background: url("/assets/bg.png") no-repeat center top;
+  background-size: cover;
+}
+
+#top-container {
+  padding-bottom: 40px;
+}
+
+.logo img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.top-content {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.top-content div {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.top-content h3,
+.info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.top-content p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.email-form {
+  background: #2c2c2c;
+  border: #ffffff solid 3px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.email-form input[type="text"],
+.email-form input[type="email"] {
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0px;
+  border-radius: 200px;
+  border: 0px;
+  padding: 8px 10px;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0.55);
+}
+
+.email-form input[type="submit"] {
+  width: 80%;
+  margin: 10px auto 10px auto;
+  display: block;
+  background: #ffffff;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 200px;
+  color: #2c2c2c;
+  transition: 0.3s;
+}
+
+.email-form input[type="submit"]:hover {
+  background-color: #ff8201;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.email-form label {
+  display: block;
+}
+
+.agreed {
+  color: #ffffff;
+  padding: 8px;
+  font-size: 14px;
+}
+
+#bottom-container {
+  padding: 20px;
+}
+
+.bottom-content {
+  max-width: 600px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 0px auto;
+  border-top: solid 4px #ffffff;
+}
+
+.info,
+.vantagens {
+  text-align: center;
+  color: #000;
+  overflow: hidden;
+}
+
+.vantagens div {
+  float: left;
+  width: 33%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.vantagens img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -15px;
+}
+
+.vantagens p {
+  text-align: center;
+  color: #ffffff;
+}
+
+#clock {
+  font-size: 24px;
+  background-color: #ffffff;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 300px;
+  transition: 0.3s;
+}
+
+#clock:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  height: 23px;
+  padding: 15px;
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c3ff00;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 496px) {
+  .logo img {
+    margin-bottom: -40px;
+  }
+
+  .top-content div {
+    width: 100%;
+  }
+
+  .top-content p {
+    margin-bottom: 30px;
+  }
+
+  .email-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #bottom-container {
+    padding: 1px;
+  }
+
+  #clock {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
