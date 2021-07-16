@@ -1,22 +1,31 @@
-var countDownDate = new Date("Nov 26, 2021 00:00:00").getTime();
+(function () {
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-var x = setInterval(function () {
+    let date = "Nov 26, 2021 00:00:00",
+        countDown = new Date(date).getTime(),
+        x = setInterval(function () {
 
-    var now = new Date().getTime();
+            let now = new Date().getTime(),
+                distance = countDown - now;
 
-    var distance = countDownDate - now;
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if (distance < 0) {
+                let headline = document.getElementById("headline"),
+                    countdown = document.getElementById("countdown"),
+                    content = document.getElementById("content");
 
-    document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+                headline.innerText = "BlackFriday Hoje!";
+                countdown.style.display = "none";
+                content.style.display = "block";
 
-    // Se a data chegar, escreva
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("clock").innerHTML = "EXPIRADO";
-    }
-}, 1000);
+                clearInterval(x);
+            }
+        }, 0)
+}());
