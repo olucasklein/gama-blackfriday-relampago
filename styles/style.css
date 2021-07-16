@@ -13,7 +13,7 @@ body {
 }
 
 .logo img {
-  max-width: 300px;
+  max-width: 260px;
   width: 100%;
   margin: 0px auto;
   display: block;
@@ -40,6 +40,7 @@ body {
 .top-content h3,
 .info h3 {
   font-size: 24px;
+  margin: 0px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -48,6 +49,10 @@ body {
 .top-content p {
   text-align: center;
   font-weight: bold;
+}
+
+.text-content {
+  margin-top: 30px;
 }
 
 .email-form {
@@ -111,41 +116,80 @@ body {
 }
 
 .info,
-.vantagens {
+.advantages {
   text-align: center;
   color: #000;
   overflow: hidden;
 }
 
-.vantagens div {
+.advantages div {
   float: left;
   width: 33%;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
-.vantagens img {
+.advantages img {
   display: block;
   margin: 0 auto;
   margin-bottom: -15px;
 }
 
-.vantagens p {
+.advantages p {
   text-align: center;
   color: #ffffff;
 }
 
-#clock {
-  font-size: 24px;
-  background-color: #ffffff;
-  width: 40%;
+#countdown {
+  color: #ffffff;
   margin: 0 auto;
-  border-radius: 300px;
-  transition: 0.3s;
+  text-align: center;
+  justify-content: center;
 }
 
-#clock:hover {
-  transform: scale(1.1);
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  align-items: center;
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.125rem;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+
+  li span {
+    font-size: 2.37rem;
+  }
 }
 
 footer {
@@ -195,8 +239,8 @@ footer a:hover {
     padding: 1px;
   }
 
-  #clock {
-    font-size: 14px;
-    padding: 10px;
+  li {
+    font-size: 0.8rem;
+    padding: 0.45rem;
   }
 }
